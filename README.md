@@ -2,6 +2,7 @@
 
 Compte TikTok **@tiktech.info.ia** (« TikTech · L'IA concrète »), média édité par **SEECLICK**.
 Ce dépôt héberge les vidéos (muettes) et leurs sources. Lien de la bio : https://www.seeclick.fr/liens
+Metricool : marque « TikTech », brandId 8053508, pour les statistiques (la publication se fait depuis l'appli TikTok pour les sons tendance).
 
 ## Ligne éditoriale (validée par Céline le 11/11/2026)
 
