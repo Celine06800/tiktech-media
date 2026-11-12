@@ -29,6 +29,9 @@ personnes qui veulent le devenir (Qualiopi) ; Neotech (NeoDesk, NeoVoice…) = a
 
 **Message de fond, régulièrement** : « Ton métier n'a pas son outil ? SEECLICK le crée sur mesure. »
 
+**Noël (décision du 12/11/2026)** : du 21 au 31 décembre seulement, un clin d'œil discret de Noël dans les vidéos
+(quelques flocons ou une lumière dorée, une accroche de saison), sans changer l'identité nuit et cyan. Le reste de l'année : aucun décor de saison.
+
 ## Structure d'une vidéo
 
 1. Accroche métier lisible dès la 1re image (sert de couverture).
