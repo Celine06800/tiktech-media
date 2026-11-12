@@ -1,0 +1,56 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><link rel="stylesheet" href="../outils/tiktech.css"></head>
+<body><div class="reel"><div class="grille"></div>
+<div class="marque"><i></i>TikTech IA</div>
+
+<!-- 1. Accroche -->
+<div class="scene" data-in="-1" data-dur="0.01" data-out="3.9" data-anim="fade">
+  <div class="sur">Le tip IA · Direction</div>
+  <div class="titre">Lundi 8 h. <span class="c">40 choses</span> dans la tête ?</div>
+  <div style="position:relative;margin-top:90px;height:600px">
+    <div class="bulle" style="position:absolute;left:0;top:0" data-in=".4" data-anim="drop">Rappeler le comptable</div>
+    <div class="bulle" style="position:absolute;left:380px;top:110px" data-in=".8" data-anim="drop">Relancer 3 factures</div>
+    <div class="bulle" style="position:absolute;left:40px;top:230px" data-in="1.2" data-anim="drop">Planning de la semaine</div>
+    <div class="bulle" style="position:absolute;left:420px;top:350px" data-in="1.6" data-anim="drop">Post LinkedIn ?!</div>
+    <div class="bulle" style="position:absolute;left:10px;top:470px" data-in="2" data-anim="drop" data-shake="2.6,3.8">Commande fournisseur</div>
+  </div>
+</div>
+
+<!-- 2. Bascule -->
+<div class="scene" data-in="4" data-out="7.6" data-anim="blur" >
+  <div class="moyen" data-in="4.1" data-anim="words" data-dur="1">Vide tout. En vrac.</div>
+  <div class="titre" style="margin-top:20px" data-in="5.1" data-anim="blur"><span class="c">L'IA</span> fait le tri.</div>
+  <div class="filet" data-in="6" data-anim="wipe"></div>
+  <div class="texte" data-in="6.2">Copie ce prompt, colle ta liste en dessous.</div>
+</div>
+
+<!-- 3. Prompt + résultat -->
+<div class="scene" data-in="7.7" data-out="16.8" data-anim="fade" >
+  <div class="carte" data-in="7.8" data-anim="scale">
+    <div class="lab">Ton prompt</div>
+    <div class="prompt curseur" data-in="8.1" data-dur="2.8" data-anim="type">Classe ces tâches en 4 groupes : urgent, important, à déléguer, à automatiser. Une ligne par tâche.</div>
+  </div>
+  <div class="carte on" style="margin-top:44px" data-in="11.3" data-anim="drop">
+    <div class="lab">Réponse de l'IA</div>
+    <div class="ligne" data-in="11.8" data-anim="left">Relancer 3 factures<span class="tag t-urg">Urgent</span></div>
+    <div class="ligne" data-in="12.3" data-anim="left">Rappeler le comptable<span class="tag t-imp">Important</span></div>
+    <div class="ligne" data-in="12.8" data-anim="left">Post LinkedIn<span class="tag t-del">À déléguer</span></div>
+    <div class="ligne" data-in="13.3" data-anim="left" data-shine="14.2">Planning de la semaine<span class="tag t-auto">À automatiser</span></div>
+  </div>
+</div>
+
+<!-- 4. Morale -->
+<div class="scene" data-in="16.9" data-out="19.8" data-anim="blur" >
+  <div class="moyen" data-in="17" data-anim="words" data-dur="1">Regarde la dernière ligne :</div>
+  <div class="titre c" data-in="18" data-anim="blur">À automatiser.</div>
+  <div class="texte" style="margin-top:44px" data-in="18.6">C'est là que tu récupères ton temps, chaque semaine.</div>
+</div>
+
+<!-- 5. Fin -->
+<div class="scene fin" data-in="19.9" data-anim="fade" >
+  <div class="moyen" data-in="20" data-anim="words" data-dur=".9">Ce qui reste <span class="c">« à automatiser »</span>, on le fait pour toi.</div>
+  <div class="texte" style="margin-top:30px" data-in="20.8">Ton métier n'a pas son outil ? SEECLICK le crée sur mesure.</div>
+  <div style="margin-top:50px" data-in="21.3" data-anim="scale"><span class="bouton">Diagnostic IA · lien en bio</span></div>
+  <div class="par" style="margin-top:70px" data-in="21.7">avec <img src="../outils/seeclick.svg" alt="SEECLICK"></div>
+</div>
+</div>
+<script src="../outils/base.js"></script></body></html>

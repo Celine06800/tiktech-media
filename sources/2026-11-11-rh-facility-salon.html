@@ -1,0 +1,57 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><link rel="stylesheet" href="../outils/tiktech.css">
+<style>.pastille{display:inline-block;font:700 34px "Inter";padding:16px 26px;border-radius:999px;background:#16223A;border:2px solid #263652;color:#D6DEEA}
+.ech{font:700 26px "Inter";color:var(--gris);margin-left:auto;flex:none}
+.fictif{font:600 24px "Inter";color:var(--gris);margin-top:16px}</style></head>
+<body><div class="reel"><div class="grille"></div>
+<div class="marque"><i></i>TikTech IA</div>
+
+<!-- 1. Accroche -->
+<div class="scene" data-in="-1" data-dur="0.01" data-out="3.9" data-anim="fade">
+  <div class="sur">L'outil SEECLICK · Coiffure</div>
+  <div class="titre">3 salariées au salon. <span class="c">Leur visite médicale</span>, c'est quand&#8239;?</div>
+  <div style="display:flex;flex-wrap:wrap;gap:22px;margin-top:80px">
+    <span class="pastille" data-in=".5" data-anim="drop" style="rotate:-3deg">Visite médicale&#8239;?</span>
+    <span class="pastille" data-in=".9" data-anim="drop" style="rotate:2deg">Entretien professionnel&#8239;?</span>
+    <span class="pastille" data-in="1.3" data-anim="drop" style="rotate:-1deg">Mutuelle&#8239;?</span>
+    <span class="pastille" data-in="1.7" data-anim="drop" data-shake="2.6,3.8" style="rotate:3deg">Formations&#8239;?</span>
+  </div>
+</div>
+
+<!-- 2. Bascule -->
+<div class="scene" data-in="4" data-out="7.6" data-anim="blur">
+  <div class="moyen" data-in="4.1" data-anim="words" data-dur="1">Le carnet papier finit par oublier.</div>
+  <div class="titre" style="margin-top:20px" data-in="5.1" data-anim="blur"><span class="c">RH Facility</span>, non.</div>
+  <div class="filet" data-in="6" data-anim="wipe"></div>
+  <div class="texte" data-in="6.2">Le logiciel RH des PME sans service RH, par SEECLICK.</div>
+</div>
+
+<!-- 3. Méthode -->
+<div class="scene" data-in="7.7" data-out="16.6" data-anim="fade">
+  <div class="etape" data-in="7.9" data-anim="left"><b>1</b>Ajoute tes salariées (ou importe ton Excel)</div>
+  <div class="etape" data-in="9" data-anim="left"><b>2</b>RH Facility calcule les échéances</div>
+  <div class="carte on" style="margin:6px 0 44px" data-in="9.6" data-anim="scale">
+    <div class="lab">Échéances à venir</div>
+    <div class="ligne" data-in="10.2" data-anim="left">Visite médicale · Léa<span class="tag t-urg">Dans 3 semaines</span></div>
+    <div class="ligne" data-in="10.7" data-anim="left">Entretien pro · Inès<span class="tag t-imp">Dans 2 mois</span></div>
+    <div class="ligne" data-in="11.2" data-anim="left">Mutuelle · Chloé<span class="tag t-auto">À faire</span></div>
+    <div class="fictif" data-in="11.4">Exemple fictif</div>
+  </div>
+  <div class="etape" data-in="13" data-anim="left"><b>3</b>Tu es alertée avant la date</div>
+</div>
+
+<!-- 4. Élargir -->
+<div class="scene" data-in="16.7" data-out="19.8" data-anim="blur">
+  <div class="moyen" data-in="16.8" data-anim="words" data-dur="1">Salon, chantier, atelier, boutique…</div>
+  <div class="titre c" style="margin-top:16px" data-in="17.8" data-anim="blur">Dès le 1<sup style="font-size:.55em">er</sup>&nbsp;salarié.</div>
+  <div class="texte" style="margin-top:40px" data-in="18.4">Des obligations RH, et des dates à ne pas rater.</div>
+</div>
+
+<!-- 5. Fin -->
+<div class="scene fin" data-in="19.9" data-anim="fade">
+  <div class="moyen" data-in="20" data-anim="words" data-dur=".9">Et toi, <span class="c">tu es à jour&#8239;?</span></div>
+  <div style="margin-top:56px" data-in="20.8" data-anim="scale"><span class="bouton">Audit RH gratuit · 3 min</span></div>
+  <div class="texte" style="margin-top:34px" data-in="21.2">10 questions sur rh-facility.fr/audit</div>
+  <div class="par" style="margin-top:70px" data-in="21.5">par <img src="../outils/seeclick.svg" alt="SEECLICK"></div>
+</div>
+</div>
+<script src="../outils/base.js"></script></body></html>
