@@ -1,13 +1,13 @@
 # TikTech IA · vidéos TikTok
 
 Compte TikTok **@tiktech.info.ia** (« TikTech · L'IA concrète »), média édité par **SEECLICK**.
-Ce dépôt héberge les vidéos (muettes) et leurs sources. Lien de la bio : https://www.seeclick.fr/liens
+Ce dépôt héberge les vidéos (avec musique depuis le 23/11/2026) et leurs sources. Lien de la bio : https://www.seeclick.fr/liens
 Metricool : marque « TikTech », brandId 8053508, pour les statistiques (la publication se fait depuis l'appli TikTok pour les sons tendance).
 
 ## Ligne éditoriale (validée par Céline le 11/11/2026)
 
 **« 1 outil, 1 problème réglé, chaque jour. »** Une vidéo par jour, 20 à 25 s, 1080 × 1920, sans visage,
-tout le texte à l'écran, **sans musique** (Céline ajoute un son tendance TikTok en publiant).
+tout le texte à l'écran, **avec une musique intégrée** (morceaux Pixabay choisis par Céline, `outils/sons/`, voir `outils/sons/SONS.md`) : Céline n'a plus besoin d'ajouter un son dans TikTok (elle peut encore le faire si un son tendance s'y prête).
 Publication par Céline depuis l'appli : 12 h 30 en semaine, 10 h le dimanche.
 
 | Jour | Domaine | Contenu |
@@ -57,7 +57,7 @@ personnes qui veulent le devenir (Qualiopi) ; Neotech (NeoDesk, NeoVoice…) = a
 
 ```bash
 node outils/apercu.mjs sources/<fichier>.html /tmp/apercu 0 3 7 15 19 22.4   # images de contrôle
-node outils/render.mjs sources/<fichier>.html 23.2 media/<fichier>.mp4        # MP4 muet 30 i/s
+node outils/render.mjs sources/<fichier>.html 23.2 media/<fichier>.mp4        # MP4 30 i/s avec musique (--musique epique|lounge|dance, --muet)
 ```
 
 Gabarit : copier une page de `sources/` (`outils/tiktech.css` pour la charte nuit #070B14 / cyan #22D3EE,
