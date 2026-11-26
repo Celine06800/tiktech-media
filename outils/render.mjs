@@ -15,9 +15,14 @@ const flag = (k) => { const i = argv.indexOf(k); if (i >= 0) { argv.splice(i, 1)
 const style = opt("--musique"); let graine = opt("--graine"); let son = opt("--son"); const muet = flag("--muet");
 const [page, dureeArg, sortie] = argv;
 if (!page || !dureeArg || !sortie) { console.error("Usage : node outils/render.mjs <page.html> <durée_s> <sortie.mp4>"); process.exit(1); }
+// DÉCEMBRE 2026 (décision de Céline du 26/11/2026) : tous les contenus de décembre prennent un extrait de sons/noel/.
+// Fichier daté AAAA-MM-JJ : décembre si le mois est 12 ; sinon, date du jour (Paris) entre le 30/11/2026 et le 31/12/2026.
+const _dt = (path.basename(sortie) || "").match(/(\d{4})-(\d{2})-(\d{2})/);
+const _auj = new Date().toLocaleDateString("sv-SE", { timeZone: "Europe/Paris" });
+const NOEL = _dt ? _dt[2] === "12" : (_auj >= "2026-11-30" && _auj <= "2026-12-31");
 const dossierSons = path.join(path.dirname(new URL(import.meta.url).pathname), "sons");
 if (!muet && !son && fs.existsSync(dossierSons)) {
-  const styles = style ? [style] : fs.readdirSync(dossierSons).filter((d) => fs.statSync(path.join(dossierSons, d)).isDirectory()).sort();
+  const styles = NOEL ? ["noel"] : style ? [style] : fs.readdirSync(dossierSons).filter((d) => d !== "noel" && fs.statSync(path.join(dossierSons, d)).isDirectory()).sort();
   const liste = styles.flatMap((s) => fs.existsSync(path.join(dossierSons, s)) ? fs.readdirSync(path.join(dossierSons, s)).filter((f) => f.endsWith(".mp3")).sort().map((f) => path.join(dossierSons, s, f)) : []);
   if (graine === undefined) { const m = path.basename(sortie || "").match(/(\d{4})-(\d{2})-(\d{2})/); graine = m ? Math.round(Date.UTC(+m[1], +m[2] - 1, +m[3]) / 864e5) * 7 : 0; }
   if (liste.length) son = liste[((+graine % liste.length) + liste.length) % liste.length];
