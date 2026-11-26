@@ -1,0 +1,59 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><link rel="stylesheet" href="../outils/tiktech.css"><style>.etape,.titre,.moyen,.texte{text-wrap:balance}</style></head>
+<body><div class="reel"><div class="grille"></div><canvas id="noel" width="1080" height="1920" style="position:absolute;inset:0;pointer-events:none;z-index:0"></canvas>
+<script>(function(){const c=document.getElementById('noel'),x=c.getContext('2d');let s=7;const r=()=>((s=(s*16807)%2147483647)/2147483647);
+const f=[...Array(46)].map(()=>({x:r()*1080,y:r()*1920,v:25+r()*45,R:1.5+r()*3,o:r()*6}));
+window.__noel=function(t){x.clearRect(0,0,1080,1920);const g=x.createRadialGradient(540,-60,0,540,-60,900);g.addColorStop(0,'rgba(255,214,140,.10)');g.addColorStop(1,'rgba(255,214,140,0)');x.fillStyle=g;x.fillRect(0,0,1080,1920);
+for(const p of f){const y=(p.y+p.v*t)%1960-20,xx=p.x+Math.sin(t*.8+p.o)*14;x.globalAlpha=.35+.25*Math.sin(t*2+p.o);x.fillStyle='#fff';x.beginPath();x.arc(xx,y,p.R,0,7);x.fill();}x.globalAlpha=1;};})();</script>
+<div class="marque"><i></i>TikTech IA</div>
+
+<!-- 1. Accroche -->
+<div class="scene" data-in="-1" data-dur="0.01" data-out="3.9" data-anim="fade">
+  <div class="sur">L'outil SEECLICK · Commerce</div>
+  <div class="titre">Gérant de magasin, <span class="c">les congés des fêtes</span> par SMS ?</div>
+  <div style="position:relative;margin-top:90px;height:600px;white-space:nowrap">
+    <div class="bulle" style="position:absolute;left:0px;top:0px" data-in="0.4" data-anim="drop">« Je peux poser le 26 ? »</div>
+    <div class="bulle" style="position:absolute;left:300px;top:110px" data-in="0.8" data-anim="drop">Un SMS, un post-it</div>
+    <div class="bulle" style="position:absolute;left:40px;top:230px" data-in="1.2" data-anim="drop">Deux absents le même jour</div>
+    <div class="bulle" style="position:absolute;left:330px;top:350px" data-in="1.6" data-anim="drop">Qui a validé ?</div>
+    <div class="bulle" style="position:absolute;left:10px;top:470px" data-in="2.0" data-anim="drop" data-shake="2.6,3.8">Planning à refaire</div>
+  </div>
+</div>
+
+<!-- 2. Bascule -->
+<div class="scene" data-in="4" data-out="7.6" data-anim="blur">
+  <div class="moyen" data-in="4.1" data-anim="words" data-dur="1">Des demandes partout.</div>
+  <div class="titre" style="margin-top:20px" data-in="5.1" data-anim="blur"><span class="c">RH Facility</span> les rassemble.</div>
+  <div class="filet" data-in="6" data-anim="wipe"></div>
+  <div class="texte" data-in="6.2">Le logiciel RH des PME sans service RH, par SEECLICK.</div>
+</div>
+
+<!-- 3. Méthode -->
+<div class="scene" data-in="7.7" data-out="16.6" data-anim="fade">
+  <div class="etape" data-in="7.9" data-anim="left"><b>1</b>Le salarié demande dans son espace</div>
+  <div class="etape" data-in="8.9" data-anim="left"><b>2</b>Tu vois qui est absent quand</div>
+  <div class="carte on" style="margin:0 0 44px" data-in="9.8" data-anim="scale">
+    <div class="lab">Congés de fin d'année</div>
+    <div class="ligne" data-in="10.4" data-anim="left">Inès · 26/12<span class="tag t-auto">Validé</span></div>
+    <div class="ligne" data-in="10.9" data-anim="left">Tom · 31/12<span class="tag t-imp">À valider</span></div>
+    <div class="ligne" data-in="11.4" data-anim="left" data-shine="12.3">Lou · 2/01<span class="tag t-del">Demandé</span></div>
+    <div class="fictif" data-in="12.2">Exemple fictif</div>
+  </div>
+  <div class="etape" data-in="13.6" data-anim="left"><b>3</b>Tu valides en un clic</div>
+</div>
+
+<!-- 4. Vigilance -->
+<div class="scene" data-in="16.7" data-out="19.8" data-anim="blur">
+  <div class="moyen" data-in="16.8" data-anim="words" data-dur="1">Deux absents le même jour ?</div>
+  <div class="titre c" data-in="17.8" data-anim="blur">Tu le vois avant.</div>
+  <div class="texte" style="margin-top:44px" data-in="18.4">Arrêts, télétravail, planning d'équipe : au même endroit.</div>
+</div>
+
+<!-- 5. Fin -->
+<div class="scene fin" data-in="19.9" data-anim="fade">
+  <div class="moyen" data-in="20" data-anim="words" data-dur=".9">Et toi, <span class="c">tu fais comment ?</span></div>
+  <div style="margin-top:50px" data-in="21.3" data-anim="scale"><span class="bouton">Audit RH gratuit · lien en bio</span></div>
+  <div class="texte" style="margin-top:30px" data-in="21.5">10 questions, 3 minutes</div>
+  <div class="par" style="margin-top:60px" data-in="21.7">par <img src="../outils/seeclick.svg" alt="SEECLICK"></div>
+</div>
+</div>
+<script src="../outils/base.js"></script><script>(function(){const r=window.render;window.render=function(t){window.__noel&&window.__noel(t);return r&&r(t);};})();</script></body></html>
